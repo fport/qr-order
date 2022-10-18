@@ -1,0 +1,5 @@
+queries
+mutations
+custom hooks
+contexts
+props functions (getServerSideProps, getInitialProps)
