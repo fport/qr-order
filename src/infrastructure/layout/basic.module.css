@@ -1,3 +1,7 @@
 .appContainer {
   @apply flex flex-col items-center min-h-screen pt-8;
 }
+
+.appLayout {
+  @apply flex w-full h-[calc(100vh-2rem)] bg-slate-50 rounded-t-2xl mt-2;
+}
