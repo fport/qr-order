@@ -3,5 +3,5 @@
 }
 
 .appLayout {
-  @apply flex w-full h-[calc(100vh-2rem)] bg-slate-50 rounded-t-2xl mt-2;
+  @apply flex flex-col w-full h-[calc(100vh-2rem)] bg-slate-50 rounded-t-2xl mt-2;
 }

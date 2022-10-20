@@ -1,0 +1,7 @@
+.container {
+    @apply flex justify-center items-center w-full my-4 h-16
+}
+
+.wrapper {
+    @apply flex justify-center w-11/12 bg-indigo-100 rounded-lg h-full
+}

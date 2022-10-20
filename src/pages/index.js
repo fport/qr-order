@@ -1,8 +1,20 @@
 import Basic from "@layout/basic";
+import BasketPreview from "@comps/basket-preview";
 import Link from "next/link";
-import ProductList from '../mocks/products'
+import productList from '../mocks/products'
 
 export default function Home() {
-  console.log(ProductList);
-  return <Basic>qr order</Basic>;
+  return <Basic>
+    <BasketPreview />
+    <div>
+      {
+        productList?.map(product => (
+          <div className="flex flex-col">
+            <span>{product.name}</span>
+            <span>{`${product.price} TL`}</span>
+          </div>
+        ))
+      }
+    </div>
+  </Basic>;
 }
