@@ -1,10 +1,10 @@
 module.exports = [
-    {
-        "name": "Çay",
-        "price": 15.50
-    },
-    {
-        "name": "Çay",
-        "price": 15.50
-    }
-]
+  {
+    name: "Çay",
+    price: 15.5,
+  },
+  {
+    name: "Americano",
+    price: 26.0,
+  },
+];
