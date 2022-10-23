@@ -19,8 +19,6 @@ const Admin = () => {
         setOrders(orderList.data)
     }
 
-    console.log('orders', orders);
-
     return (
         <Basic>
             {
