@@ -1,9 +1,11 @@
 import axios from 'axios'
 import { useEffect, useState } from 'react'
 import Basic from '@layout/basic'
+import OrderItem from '@comps/order-item'
 
-const admin = () => {
+const Admin = () => {
     const [orders, setOrders] = useState([])
+
     useEffect(() => {
         getOrders()
     }, [])
@@ -17,18 +19,22 @@ const admin = () => {
         setOrders(orderList.data)
     }
 
+    console.log('orders', orders);
+
     return (
         <Basic>
-            <div>
-                {
-                    orders && orders.map(order => (
-                        <span>{order.name}</span>
-                    ))
-                }
-            </div>
+            {
+                orders && orders.map((order) => (
+                    <OrderItem
+                        name={order.name}
+                        products={order.products}
+                        orderStatus={order.orderStatus}
+                    />
+                ))
+            }
 
         </Basic>
     )
 }
 
-export default admin
+export default Admin

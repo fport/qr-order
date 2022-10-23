@@ -1,0 +1,27 @@
+.container {
+    @apply grid grid-cols-2 items-center bg-yellow-50 rounded-sm p-2
+}
+
+.btn {
+    @apply flex text-center justify-center items-center text-white bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5
+}
+
+.icon {
+    @apply text-orange-400 mr-2
+}
+
+.titleWrapper {
+    @apply flex items-center
+}
+
+.btnIcon {
+    @apply text-lg mr-2
+}
+
+.orderDetailsContainer {
+    @apply flex flex-col items-start justify-between bg-yellow-50 rounded-sm mb-3 p-2
+}
+
+.detailsItem {
+    @apply flex items-start justify-between w-full px-4
+}

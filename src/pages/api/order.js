@@ -18,7 +18,9 @@ export default async function order(req, res) {
             break;
         case "POST":
             const create = new Order({
-                name: 'Osman Abi'
+                name: req.body.name,
+                products: req.body.products,
+                orderStatus: req.body.orderStatus
             })
             create.save().then(() => {
                 res.status(200).json(create)
