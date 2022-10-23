@@ -18,6 +18,15 @@ export const BasketProvider = ({ children }) => {
         }
     }
 
+    const removeProductToBasket = (id) => {
+        try {
+            const newBasket = basket.filter(bas => bas.idx !== id)
+            setBasket([...newBasket])
+        } catch (error) {
+            setError("Something wrong!")
+        }
+    }
+
     const calculateBasketTotalPrice = () => {
         try {
             let sum = basket.reduce((previousValue, currentValue) => {
@@ -36,6 +45,7 @@ export const BasketProvider = ({ children }) => {
                 totalPrice,
                 error,
                 addProductToBasket,
+                removeProductToBasket,
                 calculateBasketTotalPrice
             }}
         >

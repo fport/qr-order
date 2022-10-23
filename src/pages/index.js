@@ -5,7 +5,7 @@ import Products from "@comps/products";
 export default function Home() {
   return (
     <Basic>
-      <BasketPreview label="SEPET" />
+      <BasketPreview label="SEPET" redirectTo="basket" />
       <Products />
     </Basic>
   );

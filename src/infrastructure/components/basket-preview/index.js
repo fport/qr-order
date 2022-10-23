@@ -4,7 +4,7 @@ import { BiBasket } from 'react-icons/bi'
 import { useRouter } from 'next/router'
 import { BasketContext } from "../../../context/basket";
 
-export default function BasketPreview({ label }) {
+export default function BasketPreview({ label, redirectTo }) {
     const router = useRouter()
 
     const { totalPrice, basket, calculateBasketTotalPrice } = useContext(BasketContext);
@@ -16,9 +16,9 @@ export default function BasketPreview({ label }) {
         <div className={styles.container}>
             <span className={styles.wrapper}>
                 <span className={styles.price}>₺ {totalPrice}</span>
-                <button className={styles.btn} onClick={() => router.push("/basket")}>
+                <button className={styles.btn} onClick={() => router.push(`/${redirectTo}`)}>
                     <BiBasket className={styles.icon} />
-                    <span className='osman'>{label}</span>
+                    <span>{label}</span>
                 </button>
             </span>
 

@@ -1,12 +1,15 @@
 import React from 'react'
 import Basic from "@layout/basic";
+import Basket from '@comps/basket'
+import BasketPreview from "@comps/basket-preview";
 
-const Basket = () => {
+const BasketPage = () => {
     return (
         <Basic>
-            <div>Basket</div>
+            <BasketPreview label="MENU" redirectTo="" />
+            <Basket />
         </Basic>
     )
 }
 
-export default Basket
+export default BasketPage

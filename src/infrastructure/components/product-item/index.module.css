@@ -1,11 +1,19 @@
 .container {
-    @apply grid grid-cols-4 items-center bg-yellow-50 rounded-sm mb-3 p-2
+    @apply grid grid-cols-3 items-center bg-yellow-50 rounded-sm mb-3 p-2
 }
 
 .btn {
-    @apply flex items-center text-white bg-blue-700 font-medium rounded-lg text-sm px-5 py-2.5
+    @apply flex text-center justify-center items-center text-white bg-blue-500 font-medium rounded-lg text-sm px-5 py-2.5
 }
 
 .icon {
-    @apply text-orange-400
+    @apply text-orange-400 mr-2
+}
+
+.titleWrapper {
+    @apply flex items-center
+}
+
+.btnIcon {
+    @apply text-lg mr-2
 }
