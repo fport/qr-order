@@ -1,8 +1,8 @@
 import { useContext } from 'react'
-import productList from '../../../mocks/products'
 import styles from './index.module.css'
 import ProductItem from '../product-item'
 import { BasketContext } from "../../../context/basket";
+import OrderCard from '@comps/order-card';
 
 const Basket = () => {
     const { basket } = useContext(BasketContext);
@@ -23,6 +23,7 @@ const Basket = () => {
                         </>
                     ))
                 }
+                <OrderCard />
             </div>
         </>
     )
