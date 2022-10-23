@@ -13,3 +13,7 @@
 .icon {
     @apply text-white mr-2 text-xl
 }
+
+.price {
+    @apply font-bold
+}
